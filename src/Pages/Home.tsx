@@ -107,8 +107,7 @@ const Home:React.FC<props> = ({emailData, totalPages, currentPage, isError, mess
         </Pagination>
       </section>
 
-      {/* Popup Section */}
-      {/* <Modal isOpen={isOpen} setIsOpen={setIsOpen} /> */}
+      {/* Edit Section */}
       {isOpen && 
         <div className='container'>
           <Form onSubmit={(e:any) =>handleUpdate(e)} onReset={()=>setIsOpen(false)}>
